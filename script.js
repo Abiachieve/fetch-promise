@@ -36,7 +36,7 @@
   </div>
   </div>} */
 
-  const res1= fetch("https://restcountries.com/v2/all")
+const res1= fetch("https://restcountries.com/v2/all");
 res1.then((data)=>data.json()).then((data1)=>{
 
     for(var i=0; i<data1.length;i++)
@@ -51,15 +51,15 @@ res1.then((data)=>data.json()).then((data1)=>{
         <img src="${data1[i].flag}" class="card-img-top" alt="countryflag">
         <div class="card-body">
           <h5 class="card-title"><b>${data1[i].name}</b></h5>
-          <p class="card-text"><b>capital:${data1[i].capital}</b></p>
+          <p class="card-text"><b><i>Capital:${data1[i].capital}</b></i></p>
           <p class="card-text"><b><i>Region:${data1[i].region}</b></i></p>
-          <p class="card-text"><b> Subregion:${data1[i].subregion}</b></i></p>
-          <p class="card-text"><b>Population:${data1[i].population}</p>
+          <p class="card-text"><b> <i>Subregion:${data1[i].subregion}</b></i></p>
+          <p class="card-text"><b><i>Population:${data1[i].population}</b></i></p>
         </div>
       </div>
     </div>
     </div>`;
-    document.body.append(div)
+    document.body.append(div);
 } 
   
 });
