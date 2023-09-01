@@ -1,0 +1,24 @@
+body{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.card{
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 500px;
+    width: 500px;
+    border: 2px solid black !important;
+}
+.card-body{
+    color: aqua !important;
+    background-color: bisque !important;
+}
+.card-img-top{
+    width:auto;
+    height: 200px;
+    margin:auto;
+    border: 2px solid aqua !important;
+}
